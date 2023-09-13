@@ -35,7 +35,7 @@ export default function App() {
     //       title="Red jacket for sale"
     //       image={require("./app/assets/jacket.jpg")}/>
     // </View>
-   <ListingDetailsScteen />
+   <ViewImageScreen />
   );
 }
  
