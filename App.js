@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, Platform, Button, Aler
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import Card from './app/components/Card';
+import ListingDetailsScteen from './app/screens/ListingDetailsScteen';
 
 
 
@@ -25,16 +26,16 @@ export default function App() {
     //   <View style={{ backgroundColor: 'grey', width: 100, height: 100 }} />
     // </View>
     // <WelcomeScreen />
-    <View style={{
-          backgroundColor: '#f8f4f4',
-          padding: 20,
-          paddingTop: 100
-    }}>
-         <Card subtitle="$100"
-          title="Red jacket for sale"
-          image={require("./app/assets/jacket.jpg")}/>
-    </View>
-   
+    // <View style={{
+    //       backgroundColor: '#f8f4f4',
+    //       padding: 20,
+    //       paddingTop: 100
+    // }}>
+    //      <Card subtitle="$100"
+    //       title="Red jacket for sale"
+    //       image={require("./app/assets/jacket.jpg")}/>
+    // </View>
+   <ListingDetailsScteen />
   );
 }
  
