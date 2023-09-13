@@ -2,14 +2,13 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, Platform, Button, Alert, StatusBar, Dimensions } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
+import Card from './app/components/Card';
 
 
 
 export default function App() {
 
   console.log(Dimensions.get('screen'));
-
-
 
   return (
     // <View style={{
@@ -25,7 +24,17 @@ export default function App() {
     //   <View style={{ backgroundColor: 'tomato', width: 100, height: 100 }} />
     //   <View style={{ backgroundColor: 'grey', width: 100, height: 100 }} />
     // </View>
-    <WelcomeScreen />
+    // <WelcomeScreen />
+    <View style={{
+          backgroundColor: '#f8f4f4',
+          padding: 20,
+          paddingTop: 100
+    }}>
+         <Card subtitle="$100"
+          title="Red jacket for sale"
+          image={require("./app/assets/jacket.jpg")}/>
+    </View>
+   
   );
 }
  
