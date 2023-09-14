@@ -4,6 +4,7 @@ import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import Card from './app/components/Card';
 import ListingDetailsScteen from './app/screens/ListingDetailsScteen';
+import MessagesScreen from './app/screens/MessagesScreen';
 
 
 
@@ -35,7 +36,7 @@ export default function App() {
     //       title="Red jacket for sale"
     //       image={require("./app/assets/jacket.jpg")}/>
     // </View>
-   <ViewImageScreen />
+   <MessagesScreen />
   );
 }
  
