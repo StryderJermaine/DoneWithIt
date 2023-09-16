@@ -15,7 +15,7 @@ function ListItem({ title, subTitle, image, IconComponent, onPress, renderRightA
                     <View style={styles.container}>
                     {IconComponent}
                     { image && <Image source={image}
-                        style={styles.image}  /> }
+                         style={styles.image}  /> }
                     <View style={styles.detailsContainer}>
                         <AppText style={styles.title}>{ title}</AppText>
                         { subTitle && <AppText style={styles.subTitle}>{ subTitle}</AppText>}
