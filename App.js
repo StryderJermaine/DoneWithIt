@@ -1,5 +1,5 @@
 // import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity, Platform, Button, Alert, StatusBar, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, Platform, Button, Alert, StatusBar, Dimensions, TextInput } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import Card from './app/components/Card';
@@ -10,6 +10,7 @@ import Icon from './app/components/Icon';
 import ListItem from './app/components/ListItem';
 import AccountScreen from './app/screens/AccountScreen';
 import ListingsScreen from './app/screens/ListingsScreen';
+import AppTextInput from './app/components/AppTextInput';
 
 
 
@@ -18,30 +19,11 @@ export default function App() {
   console.log(Dimensions.get('screen'));
 
   return (
-    // <View style={{
-    //   //marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 40,
-    //   backgroundColor: '#fff',
-    //   flexDirection: 'row',
-    //   flex: 1,
-    //   justifyContent: "center",
-    //   alignItems: "center"
-    // }}>
-    //   <View style={{ backgroundColor: 'dodgerblue', width: 100, height: 100  }} />
-    //   <View style={{ backgroundColor: 'gold', width: 100, height: 100 }} />
-    //   <View style={{ backgroundColor: 'tomato', width: 100, height: 100 }} />
-    //   <View style={{ backgroundColor: 'grey', width: 100, height: 100 }} />
-    // </View>
-    // <WelcomeScreen />
-    // <View style={{
-    //       backgroundColor: '#f8f4f4',
-    //       padding: 20,
-    //       paddingTop: 100
-    // }}>
-    //      <Card subtitle="$100"
-    //       title="Red jacket for sale"
-    //       image={require("./app/assets/jacket.jpg")}/>
-    // </View>
-   <ListingsScreen />
+    <Screen>
+       <AppTextInput 
+          placeholder='First name'
+          icon='email' />
+    </Screen>
   );
 }
  
