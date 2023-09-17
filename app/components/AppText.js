@@ -5,7 +5,10 @@ import defaultStyles from '../config/styles';
 
 const AppText = ({ children, style,  numberOfLines = 1 }) => {
     return (
-        <Text style={[defaultStyles.text, style]} numberOfLines={numberOfLines}>
+        <Text 
+            placeholderTextColor={defaultStyles.colors.medium} 
+            style={[defaultStyles.text, style]} 
+            numberOfLines={numberOfLines}>
             {children}
         </Text>
     )

@@ -14,6 +14,7 @@ import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
 import { useState } from 'react';
 import LoginScreen from './app/screens/LoginScreen';
+import ListingEditScreen from './app/screens/ListingEditScreen';
 
 const categories = [
   { label: "Furniture", value: 1 },
@@ -39,7 +40,7 @@ export default function App() {
     //       placeholder='First name'
     //       icon='email' />
     // </Screen>
-    <LoginScreen />
+    <ListingEditScreen />
   );
 }
  
